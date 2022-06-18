@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+    <title>Quiz for students</title>
+    
+    <style>
+        
+          .card {
+    position: relative;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.637);
+    box-shadow: rgba(0, 0, 0, 0.849) 4px 4px 10px 10px;
+    border-radius: 5px;
+    height: 230px;
+    width: 340px;
+    margin-top: -50px;
+  }
+  
+  .card__title {
+    margin:  auto 9px;
+    color: rgb(31, 30, 30);
+    
+    text-align: center;
+    text-transform: capitalize;
+  }
+ 
+  .card__text {
+    margin: 20px ;
+    color: #1d1b1b;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .card__btn {
+      padding: 10px 15px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: #a78d1b9c;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px rgba(153, 153, 153, 0.411);
+    }
+    
+    </style>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+    <h2 style="margin-top: 50x;font-size: 50px;font-weight: 5px;text-align: center;text-shadow: rgba(139, 139, 139, 0.74) 5px 1px;">Quiz Section</h2>
+
+    <div class="start_btn">
+        <div class="card">
+            <h2 class="card__title" >HTML</h2>
+            
+            <p class="card__text">Basics of Html: 15 Questions
+            </p>
+            <button class="card__btn">Click to Start the Quiz</button>
+          </div>
+    </div>
+    <div class="info_box">
+        <div class="info-title"><span>Read the Instructions Below:</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+               
+            </div>
+            <div class="option_list">
+                
+            </div>
+        </section>
+
+        
+        <footer>
+            <div class="total_que">
+                
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
